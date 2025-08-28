@@ -21,7 +21,7 @@ public class selenium_mini_vwo_project2 {
     @Test
     public void verify_invalid_login() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start--maximised");
+        options.addArguments("--start-maximized");
 
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://app.vwo.com");
