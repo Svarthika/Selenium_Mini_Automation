@@ -28,6 +28,7 @@ public class selenium_mini_vwo_project2 {
 
         WebElement link_Start_Trial = driver.findElement(By.linkText("Start a free trial"));
         link_Start_Trial.click();
+        Assert.assertTrue(driver.getCurrentUrl().contains("free-trail"));
         WebElement input_email_box = driver.findElement(By.id("page-v1-step1-email"));
         input_email_box.sendKeys("test");
         try {
